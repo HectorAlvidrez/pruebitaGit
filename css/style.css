@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+main h3{
+    margin: 1rem 0;
+}
+
+main p{
+    margin: 1rem 0;
+}
+
+/* Estilos de header / Logo */
+
+.logo{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Estilos del menu */
+
+.navbar-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover{
+    color: #708883;
+}
+
+
+/* Estilos del main */
+
+main h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "section-background"
+    "section-cards"
+    "section-info"
+    "info-container"
+    "section-join";
+}
+
+
+/* Estilos de la primer sección */
+
+.section-background{
+    grid-area: section-background;
+    background-image: url(../img/main-background.png);
+    padding: 2.6rem 1.5rem;
+    background-size: 185%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-background div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+/* Estilos de la sección colecciones */
+
+.section-cards{
+    grid-area: section-cards;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.card-holder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+    box-shadow: 0 0.25rem 0.5rem 0 grey;
+}
+ 
+.cards:hover{
+    box-shadow: 0 0.7rem 1.2rem 0 grey;
+}
+
+
+/* Estilos de la sección informativa */
+
+.section-info{
+    grid-area: section-info;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: #d1c1a9;
+}
+
+.info-container{
+    grid-area: info-container;
+    margin-top: 0.8rem;
+}
+
+.first-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-right{
+    padding: 0 2rem;
+    text-align: right;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-left{
+    padding: 0 2rem;
+}
+
+
+/* Estilos de la sección de comunidad */
+
+.section-join{
+    grid-area: section-join;
+    background-color: #42504d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.section-join h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/* Estilos del footer */
+
+footer{
+    margin-top: 2rem;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #708883;
+}
+
+footer ul li a:hover{
+    color: #708883;
+    border-bottom: #708883 solid;
+    border-bottom-width: 0.1rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:600px){
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    main h1{
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .section-background{
+        grid-area: section-background;
+        background-image: url(../img/main-background.png);
+        padding: 7rem 4rem;
+        background-size: 140%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .section-join{
+        grid-area: section-join;
+        background-color: #42504d;
+        color: white;
+        text-align: center;
+        padding: 1rem 4rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15rem;
+        box-shadow: 0 0.25rem 0.5rem 0 grey;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    main h1{
+        font-size: 4rem;
+        line-height: 1.2;
+        padding: 0 2rem;
+    }
+
+    main h2{
+        font-size: 2rem;
+    }
+
+    main h3{
+        font-size: 1.5rem;
+    }
+
+    main h4{
+        font-size: 1.25rem;
+    }
+
+    .navbar-flex{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0.4rem;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas: "section-background section-background"
+        "section-info section-info"
+        "info-container info-container"
+        "section-cards section-cards"
+        "section-join section-join";
+    }
+
+    .section-background{
+        grid-area: section-background;
+        background-image: url(../img/main-background.png);
+        padding: 10rem 18rem;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .first-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+     
+    .info-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 1.5rem;
+        padding-right: 5rem;
+        justify-content: center;
+    }
+     
+    .img-left{
+        display: flex;
+        width: 50%;
+    }
+
+    .second-row{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+     
+    .info-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 1.5rem;
+        padding-left: 5rem;
+        justify-content: center;
+    }
+     
+    .img-right{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    main h3{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .section-cards{
+        grid-area: section-cards;
+        margin-top: 2rem;
+        padding: 0 2rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+        box-shadow: 0 0.25rem 0.5rem 0 grey;
+    }
+
+    .section-join h3{
+        font-size: 3rem;
+    }
+
+    footer{
+        margin-top: 4rem;
+        background-color: black;
+        padding: 1rem;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+
+/* ---------------------------------------------- */
+
+/* Estilos de page Nosotros */
+
+.main-nosotros{
+    display: grid;
+    grid-template-areas: "section-main"
+    "history-main"
+    "img-history"
+    "values-main";
+}
+
+.title-pages{
+    color: black;
+    padding: 0.25rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.main-nosotros h2{
+    padding: 0.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main-nosotros h3{
+    margin-top: 2rem;
+}
+
+.section-main{
+    grid-area: section-main;
+    color: white;
+    background-color: black;
+}
+
+.section-main h1{
+    color: white;
+}
+
+.history-main{
+    grid-area: history-main;
+    padding: 0 2rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.img-history{
+    grid-area: img-history;
+}
+
+.values-main{
+    grid-area: values-main;
+    padding: 1.25rem 2rem;
+    text-align: justify;
+}
+
+/*  MQ Ppage nosotros */
+
+@media screen and (min-width:600px) {
+
+    .history-main{
+        grid-area: history-main;
+        padding: 0 3.5rem;
+    }
+
+    .values-main{
+        grid-area: values-main;
+        padding: 1.25rem 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-nosotros{
+        display: grid;
+        grid-template-areas: "section-main section-main"
+        "history-main history-main"
+        "img-history img-history"
+        "values-main values-main";
+    }
+
+    .section-main{
+        grid-area: section-main;
+        display: flex;
+    }
+
+    .nosotros-container{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .nosotros-left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .img-nosotros{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .history-main{
+        grid-area: history-main;
+        padding: 0 3.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

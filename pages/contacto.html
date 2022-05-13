@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link al CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+     <!-- Link a la tipografia -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <title> CLÀSSICS F.C. | Contacto </title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-flex">
+            <a class="logo" href="../index.html"> CLÀSSICS F.C. </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="title-pages"> Ponte en contacto con nosotros </h1>
+
+            <h2 class="subtitle-contact"> ¿Tienes una pregunta o necesitas más información? </h2>
+        </section>
+       
+        <form>
+            <fieldset>
+                <legend> Completa el formulario de contacto </legend>
+
+                <div>
+                    <label for="name"> Nombre </label>
+                    <input type="text" name="name" placeholder="Primer nombre" required>
+                </div>
+
+                <div>
+                    <label for="apellido"> Apellido </label>
+                    <input type="text" name="apellido" placeholder="Primer apellido" required>
+                </div>
+
+                <div>
+                    <label for="email"> Correo electrónico </label>
+                    <input type="email" name="email" placeholder="ejemplo@mail.com" required>
+                </div>
+
+                <div>
+                    <label for="phone"> Teléfono </label>
+                    <!-- Nota: No dejar espacio entre elementos del pattern -->
+                    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="0123456789">
+                </div>
+
+                <div>
+                    <label for="pais"> ¿Desde dónde nos escribes? </label>
+                    <select name="pais">
+                        <option value="mexico"> México </option>
+                        <option value="argentina"> Argentina </option>
+                        <option value="colombia"> Colombia </option>
+                        <option value="chile"> Chile </option>
+                        <option value="venezuela"> Venezuela </option>
+                        <option value="otro"> Otro </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje"> Mensaje </label>
+                    <textarea name="mensaje" id="" cols="37" rows="8" placeholder="Escribe aquí tu mensaje" required></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p> 2022, CLÀSSICS F.C. Todos los derechos reservados. </p>
+    
+        <p> Síguenos </p>
+    
+        <ul>
+            <li>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
